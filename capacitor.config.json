@@ -1,0 +1,8 @@
+{
+  "appId": "ru.kodeksdeneg.app",
+  "appName": "Кодекс денег",
+  "webDir": "dist",
+  "server": {
+    "html5mode": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "node scripts/build.mjs",
+  "outputDirectory": "dist",
+  "redirects": [
+    { "source": "/finansy/osago-zanizili-vyplatu", "destination": "/avto-i-strahovki/osago-zanizili-vyplatu", "permanent": true },
+    { "source": "/finansy/osago-zanizili-vyplatu/", "destination": "/avto-i-strahovki/osago-zanizili-vyplatu/", "permanent": true },
+    { "source": "/finansy/karshering-avariya-i-shtrafy", "destination": "/avto-i-strahovki/karshering-avariya-i-shtrafy", "permanent": true },
+    { "source": "/finansy/karshering-avariya-i-shtrafy/", "destination": "/avto-i-strahovki/karshering-avariya-i-shtrafy/", "permanent": true },
+    { "source": "/finansy/kasko-otkaz-v-vyplate", "destination": "/avto-i-strahovki/kasko-otkaz-v-vyplate", "permanent": true },
+    { "source": "/finansy/kasko-otkaz-v-vyplate/", "destination": "/avto-i-strahovki/kasko-otkaz-v-vyplate/", "permanent": true },
+    { "source": "/finansy/regress-osago-k-vinovniku-dtp", "destination": "/avto-i-strahovki/regress-osago-k-vinovniku-dtp", "permanent": true },
+    { "source": "/finansy/regress-osago-k-vinovniku-dtp/", "destination": "/avto-i-strahovki/regress-osago-k-vinovniku-dtp/", "permanent": true },
+    { "source": "/finansy/tekhosmotr-kogda-obyazatelen-shtraf", "destination": "/avto-i-strahovki/tekhosmotr-kogda-obyazatelen-shtraf", "permanent": true },
+    { "source": "/finansy/tekhosmotr-kogda-obyazatelen-shtraf/", "destination": "/avto-i-strahovki/tekhosmotr-kogda-obyazatelen-shtraf/", "permanent": true },
+    { "source": "/finansy/vozvrat-strahovki-osago-pri-prodazhe-avto", "destination": "/avto-i-strahovki/vozvrat-strahovki-osago-pri-prodazhe-avto", "permanent": true },
+    { "source": "/finansy/vozvrat-strahovki-osago-pri-prodazhe-avto/", "destination": "/avto-i-strahovki/vozvrat-strahovki-osago-pri-prodazhe-avto/", "permanent": true },
+    { "source": "/finansy/karta-za-granicey-ne-rabotaet-alternativy", "destination": "/zhizn-za-granicey/karta-za-granicey-ne-rabotaet-alternativy", "permanent": true },
+    { "source": "/finansy/karta-za-granicey-ne-rabotaet-alternativy/", "destination": "/zhizn-za-granicey/karta-za-granicey-ne-rabotaet-alternativy/", "permanent": true },
+    { "source": "/finansy/perevody-za-granicu-limity-valyutnyy-kontrol", "destination": "/zhizn-za-granicey/perevody-za-granicu-limity-valyutnyy-kontrol", "permanent": true },
+    { "source": "/finansy/perevody-za-granicu-limity-valyutnyy-kontrol/", "destination": "/zhizn-za-granicey/perevody-za-granicu-limity-valyutnyy-kontrol/", "permanent": true },
+    { "source": "/finansy/zagranpasport-za-granicey-sroki", "destination": "/zhizn-za-granicey/zagranpasport-za-granicey-sroki", "permanent": true },
+    { "source": "/finansy/zagranpasport-za-granicey-sroki/", "destination": "/zhizn-za-granicey/zagranpasport-za-granicey-sroki/", "permanent": true },
+    { "source": "/finansy/uvedomlenie-o-vtorom-grazhdanstve-vnzh", "destination": "/zhizn-za-granicey/uvedomlenie-o-vtorom-grazhdanstve-vnzh", "permanent": true },
+    { "source": "/finansy/uvedomlenie-o-vtorom-grazhdanstve-vnzh/", "destination": "/zhizn-za-granicey/uvedomlenie-o-vtorom-grazhdanstve-vnzh/", "permanent": true },
+    { "source": "/finansy/uvedomlenie-fns-schet-za-rubezhom", "destination": "/zhizn-za-granicey/uvedomlenie-fns-schet-za-rubezhom", "permanent": true },
+    { "source": "/finansy/uvedomlenie-fns-schet-za-rubezhom/", "destination": "/zhizn-za-granicey/uvedomlenie-fns-schet-za-rubezhom/", "permanent": true },
+    { "source": "/finansy/arest-imushchestva-uehavshih-168-fz", "destination": "/zhizn-za-granicey/arest-imushchestva-uehavshih-168-fz", "permanent": true },
+    { "source": "/finansy/arest-imushchestva-uehavshih-168-fz/", "destination": "/zhizn-za-granicey/arest-imushchestva-uehavshih-168-fz/", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "DENY" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "bot.kodeksdeneg.ru" }],
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }
+      ]
+    }
+  ]
+}
