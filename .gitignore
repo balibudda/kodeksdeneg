@@ -1,0 +1,7 @@
+node_modules/
+dist/
+dist-social/
+dist-social-comedy/
+.vercel/
+.DS_Store
+.vercel

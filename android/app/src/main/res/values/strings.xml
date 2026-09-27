@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Кодекс денег</string>
+    <string name="title_activity_main">Кодекс денег</string>
+    <string name="package_name">ru.kodeksdeneg.app</string>
+    <string name="custom_url_scheme">ru.kodeksdeneg.app</string>
+</resources>
